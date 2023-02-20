@@ -1,0 +1,217 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    background-color: blue;
+    a{
+   
+        background-color: blue;
+        &:hover{
+            color: blue;
+            background-color: white;
+        }
+    }
+
+    }
+
+
+
+    header{
+        nav{
+            .container{
+                .collapse{
+                    ul{
+                        li{
+                            
+                            a{
+                                font-weight: bold;
+                               
+                                &:hover{
+                                    color: blue;
+                                }
+                            }
+                            ul{
+                                li{
+                                    a{
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .blue{
+
+        .d-flex{
+            height: 350px;
+            background-color: #1245B3;
+            .fw-bold{
+                .dot{
+                    border: dotted;
+                }   
+            }   
+        }
+    }
+    
+
+
+
+
+.picture{
+    .container{
+        .row{
+            .col-12{
+                .position-relative{
+                    .position-absolute{
+                        color: white;
+                        transition-duration: 1s;
+                        height: 100%;
+                        visibility: hidden;
+                    }
+
+                    &:hover{
+                        .position-absolute{
+                            height: 100%;
+                            visibility: visible;
+                            color: white;
+                            background-color: blue;
+                            opacity: .7;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}         
+
+
+
+.pictur-after{
+    .container{
+        .row{
+            .col-12{
+                .box{
+
+                    position: relative;
+                    overflow: hidden;
+
+                    &::after{
+                        position: absolute;
+                        top:  0;
+                        width: 100%;
+                        height: 0px;
+                        transition: .7s;
+                        
+                        content: "";
+                        display: block;
+                        background-color: blue;
+                        opacity: .7;
+                        
+                    }
+                    &:hover::after{
+                        height: 100%;
+     
+                    }
+                    &:hover{
+                        .box-text{
+                            width: 100%;
+                            height: 40%;
+                        }
+                    }
+
+                    .box-text{
+                        position: absolute;
+                        bottom: 0;
+                       width: 100%;
+                       height: 0px;
+                       color: white;
+                        z-index: 2;
+                       transition: 0.7s;
+                    
+                    }
+                    
+
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+.stay{
+    background-color: #F17E59;
+
+}
+
+
+
+
+
+
+footer{
+    background-color: #101320;
+    .container{
+        .row{
+            .col-12{
+                .color{
+                    color:#F17E59
+                }
+                .row{
+
+                    .col-12{
+                        ul{
+                            li{
+                                a{
+                                    text-decoration: none;
+                                    color: white;
+                                    line-height: 50px;
+                                    &:hover{
+                                        color: blue;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+
+        }
+    }
+}
+
+@media(max-width:992px){
+    footer{
+        .container{
+            .row{
+                .col-12{
+                    .row{
+                        .col-12{
+                            .border-start{
+                                border: none !important;
+                                padding-left: 0px !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
